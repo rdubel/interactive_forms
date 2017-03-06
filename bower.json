@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "bootstrap-validator": "https://github.com/1000hz/bootstrap-validator.git#^0.11.9",
+    "zxcvbn": "^4.4.2"
   }
 }

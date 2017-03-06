@@ -1,0 +1,31 @@
+.row:not(.form-inline) {
+    margin-top: 5em;
+}
+
+form {
+    background-color: rgb(80, 199, 210);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 5px lightblue;
+
+}
+
+label {
+    display: block;
+    margin: 1em 0;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.79);
+    color: rgb(75, 75, 75);
+}
+
+.security {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pwstrength {
+    height: 10px;
+    width: 1%;
+    background-color: red;
+    transition: .3s;
+}
