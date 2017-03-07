@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#inputPassword").keydown(function(event) {
+    $("#inputPassword").keyup(function(event) {
         var result = zxcvbn($("#inputPassword").val())
         var pwLength = $(this).val().length;
         if (result.score == 0) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
         if (result.score == 1) {
             $("#pwstrength").css({
                 width: '20%',
-                backgroundColor: 'orange'
+                backgroundColor: 'rgb(255, 77, 0)'
             });
             $("#strengthIndex").html("Weak")
         }
@@ -37,7 +37,7 @@ $(document).ready(function() {
             });
             $("#strengthIndex").html("Very strong")
         }
-        console.log(result.score);
+        console.log(result.guesses);
     });
 
 });
